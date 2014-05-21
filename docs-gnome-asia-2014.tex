@@ -1,0 +1,280 @@
+% $Header: /Users/joseph/Documents/LaTeX/beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
+
+\documentclass{beamer}
+
+% This file is a solution template for:
+
+% - Talk at a conference/colloquium.
+% - Talk length is about 20min.
+% - Style is ornate.
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usecolortheme[RGB={203,214,218}]{structure}
+  \usetheme{Frankfurt}
+  \setbeamercolor{frametitle}{fg=black}
+  \setbeamercolor{title}{fg=black}
+  \definecolor{muddyblue}{RGB}{88,118,133}
+  \setbeamercolor{section in head/foot}{fg=white, bg=muddyblue}
+  \setbeamercolor{bibliography entry author}{fg=muddyblue}
+  \setbeamertemplate{navigation symbols}{}
+  % or ...
+
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[latin1]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+
+\title%[Short Paper Title] (optional, use only with long paper titles)
+{GNOME Documentation: helping you learn and give back}
+
+%\subtitle
+%{Include Only If Paper Has a Subtitle}
+
+\author
+{Ekaterina Gerasimova, \texttt{kittykat3756@gmail.com}}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\date%[GUADEC 2013] % (optional, should be abbreviation of conference name)
+{GNOME.Asia 2014}
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+%\subject{Theoretical Computer Science}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+\pgfdeclareimage[height=1cm]{university-logo}{gnomeasia.pdf}
+\logo{\pgfuseimage{university-logo}}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{How does it work?}
+
+\subsection{Who are the documentation team?}
+
+\begin{frame}{Who are the documentation team?}
+  \begin{itemize}
+  \item
+    
+  \item
+    Sun were heavily involved in GNOME documentation in the early days
+  \item
+    Now made up mostly of volunteer contributors
+  \item
+    Valuable contributions from translators
+  \end{itemize}
+\end{frame}
+
+% map?
+
+\begin{frame}{What does the documentation team do?}
+  \begin{itemize}
+  \item
+    User help
+  \item
+    System administrator guide
+  \item
+    Developer documentation
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{How does the team work?}
+  \begin{itemize}
+  \item
+    Efforts coordinated on wiki, IRC and mailing list
+  \item
+    At least two in-person meetups per year
+  \item
+    Organised drives around release time
+  \item
+    Team members "maintain" docs for individual projects
+  \end{itemize}
+\end{frame}
+
+\subsection{Why are you here?}
+
+\begin{frame}{Why are you here?}%{Subtitles are optional.}
+  \pgfdeclareimage[height=4.5cm]{bad-flowchart}{bad-flowchart.pdf}
+  \center{\pgfuseimage{bad-flowchart}}
+  % If you think the first step towards contributing is sending in a patch, you're probably wrong.
+\end{frame}
+
+\begin{frame}{It's all about the people}
+  \begin{itemize}
+  \item
+    Talk to people\ldots
+    \begin{itemize}
+    \item
+      IRC
+    \item
+      Mailing lists
+    \item
+      Here and now
+    \end{itemize}
+  \item
+    Use available resources
+  \item
+    Ask for help
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Code of conduct}
+  \begin{itemize}
+  \item
+    Assume people mean well
+  \item
+    Try to be concise
+  \item
+    Be patient and generous
+  \item
+    Be respectful and considerate
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Workflow}
+  \begin{itemize}
+  \item
+    Find out about the project workflow and stick to it
+    \begin{itemize}
+    \item
+      Bugzilla
+    \item
+      Mailing lists
+    \item
+      IRC
+    \item
+      Email
+    \end{itemize}
+  \item
+    Build and test
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{How things happen}
+  \pgfdeclareimage[height=4.5cm]{good-flowchart}{good-flowchart.pdf}
+  \center{\pgfuseimage{good-flowchart}}
+  % If you think the first step towards contributing is sending in a patch, you're probably wrong.
+\end{frame}
+
+\begin{frame}{Followup}
+  \begin{itemize}
+  \item
+    Be patient
+  \item
+    Follow up with the reviewer
+  \item
+    Follow up on the review
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Make good contributions}
+  \begin{itemize}
+  \item
+    Use the reviewer's time well
+  \item
+    Keep to the style of the project
+  \item
+    Follow the review process
+  \item
+    Respond in a timely manner
+  \item
+    Write good commit messages
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Experience}
+  \begin{itemize}
+  \item
+    The more you contribute, the more you communicate with people
+  \item
+    The more you communicate, the more you become part of the community
+  \item
+    Once you are part of the community, you can become a Foundation member
+  \end{itemize} 
+\end{frame}
+
+\begin{frame}{Summary}
+
+  % Keep the summary *very short*.
+  \begin{itemize}
+  \item
+    The \alert{passion} for a FLOSS project stems from what the project means to you.
+  \item
+    The \alert{ability to iterate faster than your peers} will get you ahead.
+  \item
+    Keep your mind and options, \alert{open}.
+  \end{itemize}
+  
+  % The following outlook is optional.
+  \vskip0pt plus.5fill
+  \begin{itemize}
+  \item
+    Outlook
+    \begin{itemize}
+    \item
+      Focus on a single project.
+    \item
+      One bug fix a day.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+
+% All of the following is optional and typically not needed. 
+\appendix
+\section<presentation>*{\appendixname}
+\subsection<presentation>*{Resources}
+
+\begin{frame}[allowframebreaks]
+  \frametitle<presentation>{Resources}
+    
+  \begin{thebibliography}{10}
+
+  \bibitem{code}
+    Code of conduct:
+    \newblock https://wiki.gnome.org/CodeOfConduct/
+
+  \end{thebibliography}
+\end{frame}
+
+\end{document}
