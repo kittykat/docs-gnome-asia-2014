@@ -1,44 +1,6 @@
-% $Header: /Users/joseph/Documents/LaTeX/beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
-
 \documentclass{beamer}
 
-% This file is a solution template for:
-
-% - Talk at a conference/colloquium.
-% - Talk length is about 20min.
-% - Style is ornate.
-
-
-
-% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
-%
-% In principle, this file can be redistributed and/or modified under
-% the terms of the GNU Public License, version 2.
-%
-% However, this file is supposed to be a template to be modified
-% for your own needs. For this reason, if you use this file as a
-% template and not specifically distribute it as part of a another
-% package/program, I grant the extra permission to freely copy and
-% modify this file as you see fit and even to delete this copyright
-% notice. 
-
-
-\mode<presentation>
-{
-  \usecolortheme[RGB={203,214,218}]{structure}
-  \usetheme{Frankfurt}
-  \setbeamercolor{frametitle}{fg=black}
-  \setbeamercolor{title}{fg=black}
-  \definecolor{muddyblue}{RGB}{88,118,133}
-  \setbeamercolor{section in head/foot}{fg=white, bg=muddyblue}
-  \setbeamercolor{bibliography entry author}{fg=muddyblue}
-  \setbeamertemplate{navigation symbols}{}
-  % or ...
-
-  \setbeamercovered{transparent}
-  % or whatever (possibly just delete it)
-}
-
+\include{gnomeasia-theme}
 
 \usepackage[english]{babel}
 % or whatever
@@ -53,7 +15,7 @@
 
 
 \title%[Short Paper Title] (optional, use only with long paper titles)
-{GNOME Documentation: helping you learn and give back}
+{GNOME Documentation:\\ helping you learn and give back}
 
 %\subtitle
 %{Include Only If Paper Has a Subtitle}
@@ -64,22 +26,14 @@
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
 
-\date%[GUADEC 2013] % (optional, should be abbreviation of conference name)
-{GNOME.Asia 2014}
-% - Either use conference name or its abbreviation.
+\date%[GNOME.Asia 2014] % (optional, should be abbreviation of conference name)
+{GNOME.Asia Summit 2014}
 % - Not really informative to the audience, more for people (including
 %   yourself) who are reading the slides online
 
 %\subject{Theoretical Computer Science}
 % This is only inserted into the PDF information catalog. Can be left
 % out. 
-
-% If you have a file called "university-logo-filename.xxx", where xxx
-% is a graphic format that can be processed by latex or pdflatex,
-% resp., then you can add a logo as follows:
-
-\pgfdeclareimage[height=1cm]{university-logo}{gnomeasia.pdf}
-\logo{\pgfuseimage{university-logo}}
 
 \begin{document}
 
@@ -94,26 +48,77 @@
 \begin{frame}{Who are the documentation team?}
   \begin{itemize}
   \item
-    
+    Established around 1999
   \item
-    Sun were heavily involved in GNOME documentation in the early days
+    Sun Microsystems were heavily involved in GNOME documentation in the early days
   \item
     Now made up mostly of volunteer contributors
   \item
-    Valuable contributions from translators
+    Valuable contributions from other community members, especially translators
   \end{itemize}
 \end{frame}
 
-% map?
+\begin{frame}{}
+  \pgfdeclareimage[height=5cm]{map-team}{map.png}
+  \center{\pgfuseimage{map-team}}
+\end{frame}
+
+\begin{frame}{}
+  \pgfdeclareimage[height=5cm]{map-contribs}{map-contribs.png}
+  \center{\pgfuseimage{map-contribs}}
+\end{frame}
+
+\begin{frame}{}
+  \pgfdeclareimage[height=5cm]{map-china}{map-china.png}
+  \center{\pgfuseimage{map-china}}
+\end{frame}
 
 \begin{frame}{What does the documentation team do?}
   \begin{itemize}
   \item
-    User help
+    User help: http://help.gnome.org/user/
   \item
-    System administrator guide
+    System administrator guide: http://help.gnome.org/admin/
   \item
-    Developer documentation
+    Developer documentation: http://developer.gnome.org
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{What tools does the team use?}
+  \begin{itemize}
+  \item
+    Mallard
+    \begin{itemize}
+      \item
+        XML, similar to HTML
+      \item
+        designed for application and desktop documentation
+    \end{itemize}
+  \item
+    yelp-tools
+    \begin{itemize}
+      \item
+        set of helpful command-line tools
+      \item
+ 	great for validating Mallard
+    \end{itemize}
+  \item
+    text editor (any is suitable)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{What about the help itself?}
+  \begin{itemize}
+  \item
+    Task oriented: short pages explaining how to achieve one goal
+  \item
+    Extensible: easy to add pages one at a time
+  \item
+    Limited markup: around 50 elements, much fewer than alternatives
+  \item
+    Easy to preview on the go: run 'yelp help/C/' for most applications
+  \item
+    Licensed under CC-by-SA 3.0
   \end{itemize}
 \end{frame}
 
@@ -124,11 +129,13 @@
   \item
     At least two in-person meetups per year
   \item
-    Organised drives around release time
+    Organised online sprints around release time
   \item
     Team members "maintain" docs for individual projects
   \end{itemize}
 \end{frame}
+
+\section{How can you help?}
 
 \subsection{Why are you here?}
 
@@ -173,7 +180,7 @@
 \begin{frame}{Workflow}
   \begin{itemize}
   \item
-    Find out about the project workflow and stick to it
+    Find out about the project workflow and follow it
     \begin{itemize}
     \item
       Bugzilla
@@ -192,7 +199,6 @@
 \begin{frame}{How things happen}
   \pgfdeclareimage[height=4.5cm]{good-flowchart}{good-flowchart.pdf}
   \center{\pgfuseimage{good-flowchart}}
-  % If you think the first step towards contributing is sending in a patch, you're probably wrong.
 \end{frame}
 
 \begin{frame}{Followup}
@@ -221,7 +227,7 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Experience}
+\begin{frame}{Experience and growth}
   \begin{itemize}
   \item
     The more you contribute, the more you communicate with people
@@ -230,49 +236,52 @@
   \item
     Once you are part of the community, you can become a Foundation member
   \end{itemize} 
+  \begin{itemize}
+  \item
+    Help others?
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Summary}
-
   % Keep the summary *very short*.
   \begin{itemize}
   \item
-    The \alert{passion} for a FLOSS project stems from what the project means to you.
+    The \alert{passion} for a FLOSS project comes from your personal interest in the project
   \item
-    The \alert{ability to iterate faster than your peers} will get you ahead.
+    \alert{Collaborate} with others and \alert{learn together} to get ahead
   \item
-    Keep your mind and options, \alert{open}.
+    \alert{Explore} other projects
   \end{itemize}
   
-  % The following outlook is optional.
-  \vskip0pt plus.5fill
+  With special thanks to
   \begin{itemize}
   \item
-    Outlook
-    \begin{itemize}
-    \item
-      Focus on a single project.
-    \item
-      One bug fix a day.
-    \end{itemize}
+    Andr\'{e} \v{C}. Klapper, \texttt{} 
+  \item
+    Sindhu S, \texttt{sindhus@gnome.org}
   \end{itemize}
 \end{frame}
 
-
-
 % All of the following is optional and typically not needed. 
-\appendix
-\section<presentation>*{\appendixname}
+\section<presentation>*{Resources}
 \subsection<presentation>*{Resources}
 
-\begin{frame}[allowframebreaks]
-  \frametitle<presentation>{Resources}
+\begin{frame}{Resources}
     
   \begin{thebibliography}{10}
 
   \bibitem{code}
-    Code of conduct:
-    \newblock https://wiki.gnome.org/CodeOfConduct/
+    Documentation team workspace:
+    \newblock https://wiki.gnome.org/DocumentationProject/
+  \bibitem{code}
+    Source code:
+    \newblock https://git.gnome.org/
+  \bibitem{code}
+    Bugzilla:
+    \newblock https://bugzilla.gnome.org/
+  \bibitem{code}
+    Mallard references:
+    \newblock http://projectmallard.org/\\ http://flossmanuals.net/introduction-to-mallard/
 
   \end{thebibliography}
 \end{frame}
