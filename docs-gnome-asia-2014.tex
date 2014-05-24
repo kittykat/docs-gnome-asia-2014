@@ -3,6 +3,8 @@
 \include{gnomeasia-theme}
 
 \usepackage[english]{babel}
+\usepackage{listings}
+\lstset{basicstyle=\footnotesize}
 % or whatever
 
 \usepackage[latin1]{inputenc}
@@ -84,6 +86,11 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \pgfdeclareimage[width=9cm]{help}{help}
+  \center{\pgfuseimage{help}}
+\end{frame}
+
 \begin{frame}{What tools does the team use?}
   \begin{itemize}
   \item
@@ -105,6 +112,28 @@
   \item
     text editor (any is suitable)
   \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,plain]{A page in Mallard}
+  \begin{lstlisting}
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="browse-web">
+
+  <info>
+    <link type="guide" xref="index#start" group="#first"/>
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+    </credit>
+    <desc>View web pages on the internet.</desc>
+  </info>
+
+  <title>Browse the web</title>
+
+  <p>Web browsers can be used to view pages on the Internet
+  when you have an Internet connection. To start browsing
+  the web:</p>
+  \end{lstlisting}
 \end{frame}
 
 \begin{frame}{What about the help itself?}
@@ -133,6 +162,24 @@
   \item
     Team members "maintain" docs for individual projects
   \end{itemize}
+\end{frame}
+
+\begin{frame}{Where is the code?}
+  http://git.gnome.org
+  \pgfdeclareimage[width=8.5cm]{git}{git}
+  \center{\pgfuseimage{git}}
+\end{frame}
+
+\begin{frame}{Where is the documentation team workspace?}
+  http://wiki.gnome.org/DocumentationProject
+  \pgfdeclareimage[width=8.5cm]{gdp}{gdp}
+  \center{\pgfuseimage{gdp}}
+\end{frame}
+
+\begin{frame}{Where are the tasks?}
+  http://wiki.gnome.org/DocumentationProject/Tasks
+  \pgfdeclareimage[width=8.5cm]{tasks}{tasks}
+  \center{\pgfuseimage{tasks}}
 \end{frame}
 
 \section{How can you help?}
@@ -178,23 +225,133 @@
 \end{frame}
 
 \begin{frame}{Workflow}
-  \begin{itemize}
-  \item
-    Find out about the project workflow and follow it
+  \begin{columns}
+  \column{.45\textwidth}
     \begin{itemize}
     \item
-      Bugzilla
+      Find out about the project workflow and follow it
+      \begin{itemize}
+      \item
+        Bugzilla
+      \item
+        Mailing lists
+      \item
+        IRC
+      \item
+        Email
+      \end{itemize}
     \item
-      Mailing lists
-    \item
-      IRC
-    \item
-      Email
+      Build and test
     \end{itemize}
-  \item
-    Build and test
-  \end{itemize}
+  \column{.55\textwidth}
+    \pgfdeclareimage[height=4.3cm]{question}{question}
+    \center{\pgfuseimage{question}}
+  \end{columns}
 \end{frame}
+
+\begin{frame}{Workflow}
+  \begin{columns}
+  \column{.45\textwidth}
+    \begin{itemize}
+    \item
+      Find out about the project workflow and follow it
+      \begin{itemize}
+      \item
+        \alert{Bugzilla}
+      \item
+        Mailing lists
+      \item
+        IRC
+      \item
+        Email
+      \end{itemize}
+    \item
+      Build and test
+    \end{itemize}
+  \column{.55\textwidth}
+    \pgfdeclareimage[height=4.3cm]{bugs}{bugs}
+    \center{\pgfuseimage{bugs}}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Workflow}
+  \begin{columns}
+  \column{.45\textwidth}
+    \begin{itemize}
+    \item
+      Find out about the project workflow and follow it
+      \begin{itemize}
+      \item
+        Bugzilla
+      \item
+        \alert{Mailing lists}
+      \item
+        IRC
+      \item
+        Email
+      \end{itemize}
+    \item
+      Build and test
+    \end{itemize}
+  \column{.55\textwidth}
+    \pgfdeclareimage[height=4.3cm]{mail}{mail}
+    \center{\pgfuseimage{mail}}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Workflow}
+  \begin{columns}
+  \column{.45\textwidth}
+    \begin{itemize}
+    \item
+      Find out about the project workflow and follow it
+      \begin{itemize}
+      \item
+        Bugzilla
+      \item
+        Mailing lists
+      \item
+        \alert{IRC}
+      \item
+        Email
+      \end{itemize}
+    \item
+      Build and test
+    \end{itemize}
+  \column{.55\textwidth}
+    \pgfdeclareimage[height=4.3cm]{irc}{irc}
+    \center{\pgfuseimage{irc}}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Workflow}
+  \begin{columns}
+  \column{.45\textwidth}
+    \begin{itemize}
+    \item
+      Find out about the project workflow and follow it
+      \begin{itemize}
+      \item
+        Bugzilla
+      \item
+        Mailing lists
+      \item
+        IRC
+      \item
+        \alert{Email}
+      \end{itemize}
+    \item
+      Build and test
+    \end{itemize}
+  \column{.55\textwidth}
+    \pgfdeclareimage[height=4.3cm]{email}{email}
+    \center{\pgfuseimage{email}}
+  \end{columns}
+\end{frame}
+
+
+
+
 
 \begin{frame}{How things happen}
   \pgfdeclareimage[height=4.5cm]{good-flowchart}{good-flowchart.pdf}
